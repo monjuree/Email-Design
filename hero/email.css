@@ -1,0 +1,147 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*===Generic==*/
+
+*{ margin:0; padding:0;	}
+
+*{ font-family:"Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+
+body{ width:100%!important; height:100%!important;}
+
+img{ max-width:100%; height:auto; }
+
+
+body {
+	
+	-webkit-font-smoothing:antialiased; 
+	-webkit-text-size-adjust:none;
+	width: 100%!important;
+	height: 100%;
+}
+
+
+/*------ BODY -----*/
+
+table.body-wrap { width: 100%;}
+
+
+
+/*---- HEADER -------*/
+
+table.head-wrapper{ width:100%;}
+
+.head .container table td.logo{ padding:15px;}
+.head .container table td.label{ padding:15px; padding-left:0;}
+
+.collapse{ margin:0; padding:15px;}
+
+/*----Body----*/
+
+table.body-wrapper{width:100%}
+
+
+
+
+
+/*===== Elements =====*/
+
+a { color: #2BA6CB;}
+
+a.fb { background-color: #3B5998!important; }
+a.tw { background-color: #1daced!important; }
+a.gp { background-color: #DB4A39!important; }
+a.ms { background-color: #000!important; }
+
+
+.social, .soc-btn{ display:block; text-align:center; padding:3px 7px; 
+font-size:12px; margin-bottom:10px; text-decoration:none; font-weight:bold;}
+
+.soc-btn{ width:100%; color:#ffffff;}
+
+.social{ background-color:#f4e4df;}
+
+.social .column {float:left; width:280px; min-width:279px;}
+
+.column table{ width:100%;}
+
+.column{ width:300px; float:left;}
+
+
+
+/* Be sure to place a .clear element after each set of columns, just to be safe */
+.clear { display: block; clear: both; }
+
+
+
+
+
+
+/*================= responsive ===========*/
+
+/* This should also be a block element, so that it will fill 100% of the .container */
+.content{
+	display:block;
+	margin:0 auto !important;
+	padding:15px;
+	max-width:600px;
+	}
+	
+.content table{ width:100%; }	
+
+/* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+.container{
+	display:block!important;
+	margin:0 auto !important; /* makes it centered */
+	max-width:600px !important;
+	clear:both !important;
+	
+	}
+	
+	
+/*----TYPOGRAPHY----*/
+
+h3, h6 { line-height:1.1; margin-bottom:15px;}
+
+
+h3 { font-weight:900; font-size:27px;}
+H5 { font-weight:900; font-size:17px;}
+h6 { font-weight:900; font-size: 14px; text-transform: uppercase; color:#444;}
+
+h3 small, h6 small{ 
+font-size:60%; 
+color:#6f6f6f; 
+line-height:0; 
+text-transform:none;  }
+
+
+/*-------- footer -------------*/
+
+table.footer-wrapper{ width:100%; clear:both !important;}
+
+.footer-wrapper .container .content p{ font-size:10px; 
+font-weight:bold; padding:15px; border-top:1px solid rgb(215,215,215); }
+
+
+
+
+
+/* ------------------------------------------- 
+		PHONE
+		For clients that support media queries.
+		Nothing fancy. 
+-------------------------------------------- */
+@media only screen and (max-width: 600px) {
+	
+	a[class="btn"] { display:block!important; margin-bottom:10px!important; background-image:none!important; margin-right:0!important;}
+
+	div[class="column"] { width: auto!important; float:none!important;}
+	
+	table.social div[class="column"] {
+		width:auto!important;
+	}
+
+}
+
+
+	
